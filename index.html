@@ -8,10 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="progress"></div>
 <header class="nav-wrap">
   <nav class="nav">
     <a href="#home" class="brand">SMP<span>.</span></a>
@@ -30,7 +32,7 @@
 <section id="home" class="hero">
   <div class="glow g1"></div><div class="glow g2"></div>
   <div class="hero-inner">
-    <div class="hero-text reveal">
+    <div class="hero-text">
       <span class="badge"><i></i> Open to internship opportunities</span>
       <h1>Shella<br>Mutiara Putri</h1>
       <p class="tagline">Digital Business student at <b>ITS</b> exploring <span class="hl">digital payments</span>, <span class="hl">FinTech</span>, and <span class="hl">data analysis</span>.</p>
@@ -40,56 +42,77 @@
         <a href="#contact" class="btn ghost">Let's Work Together</a>
       </div>
     </div>
-    <div class="hero-photo reveal">
+    <div class="hero-photo">
       <div class="arch"></div>
       <img src="shella.png" alt="Shella Mutiara Putri">
       <p class="quote">“Every Experience is an Opportunity to Learn and Create Something Meaningful.”</p>
     </div>
   </div>
-  <div class="stats reveal">
-    <div><b>3.52</b><span>GPA / 4.00</span></div>
-    <div><b>+30%</b><span>Instagram followers growth</span></div>
-    <div><b>+50%</b><span>TikTok engagement</span></div>
-    <div><b>11</b><span>KPIs analyzed in HR analytics</span></div>
-  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <div class="about reveal">
-    <div>
-      <p class="eyebrow">About me</p>
-      <h2>Hello, I'm Shella 👋</h2>
-      <p class="lead">Digital Business student at Institut Teknologi Sepuluh Nopember with interests in digital payment systems, business development, and data analysis. Experienced in social media management, digital marketing, and data management through internship and organizational activities. Passionate about exploring digital payment innovations and understanding how technology enhances transaction efficiency and supports financial inclusion.</p>
-      <div class="mini">
-        <div><small>Education</small><b>Institut Teknologi Sepuluh Nopember</b><span>Digital Business · GPA 3.52/4.00 · 2024 – Present</span></div>
-        <div><small>Languages</small><b>Indonesian · English (Intermediate)</b><span>Currently attending a course at English First</span></div>
-      </div>
-    </div>
-    <div class="about-side">
-      <div class="box">
-        <h3>Career Interest</h3>
-        <ul class="check">
-          <li>Digital Payment Systems</li><li>Payment Innovation &amp; Technology</li><li>Digital Transaction Ecosystem</li>
-          <li>Cashless Payment Adoption</li><li>Financial Technology (FinTech)</li><li>Data Analysis &amp; Digital Business Development</li>
+  <p class="eyebrow reveal" data-anim="left">About me</p>
+  <h2 class="reveal title-line" data-anim="left">Hello, I'm Shella 👋</h2>
+  <div class="bento stagger">
+    <div class="b-card b-intro reveal" data-anim="zoom">
+      <p class="intro-big">I turn data and digital channels into <span class="hl-blue">clear business decisions</span>, with a growing focus on <span class="hl-blue">digital payments &amp; FinTech</span>.</p>
+      <p class="lead">Digital Business student at Institut Teknologi Sepuluh Nopember with hands-on experience in social media management, digital marketing, and data management through internships and organizations. I'm passionate about how technology makes transactions more efficient and supports financial inclusion.</p>
+      <div class="now">
+        <small>Currently</small>
+        <ul>
+          <li><i></i>Talent Analytics Intern at <b>StudentsxCEOs East Java</b></li>
+          <li><i></i>Internal Treasurer at <b>ITS Basketball League</b></li>
+          <li><i></i>Improving my English at <b>English First</b></li>
         </ul>
       </div>
-      <div class="box">
-        <h3>Core Strengths</h3>
-        <div class="tags"><span>Analytical Thinking</span><span>Teamwork</span><span>Problem Solving</span><span>Adaptability</span><span>Communication</span><span>Attention to Detail</span></div>
+    </div>
+
+    <div class="b-card b-gpa reveal" data-anim="zoom">
+      <small>Education</small>
+      <b class="big">3.52<span>/4.00</span></b>
+      <p><b>Institut Teknologi Sepuluh Nopember</b><br>Digital Business · 2024 – Present</p>
+    </div>
+
+    <div class="b-card b-lang reveal" data-anim="zoom">
+      <small>Languages</small>
+      <div class="lang"><span>Indonesian</span><em>Native</em></div>
+      <div class="lang"><span>English</span><em>Intermediate</em></div>
+    </div>
+
+    <div class="b-card b-focus reveal" data-anim="zoom">
+      <small>What I bring</small>
+      <div class="focus">
+        <div><span class="ic">📊</span><b>Data Analysis</b><p>Google Sheets, Excel &amp; SQL to turn raw data into insights.</p></div>
+        <div><span class="ic">📱</span><b>Digital Marketing</b><p>Content planning and social media performance analysis.</p></div>
+        <div><span class="ic">💳</span><b>FinTech Interest</b><p>Digital payments, cashless adoption &amp; transaction ecosystems.</p></div>
       </div>
-      <div class="box">
-        <h3>Technical Tools</h3>
-        <div class="tags"><span>Microsoft Word</span><span>Microsoft Excel</span><span>Google Sheets</span><span>PostgreSQL</span><span>VS Code</span><span>GitHub</span><span>Figma</span><span>Canva</span><span>CapCut</span></div>
-      </div>
+    </div>
+
+    <div class="b-card b-interest reveal" data-anim="zoom">
+      <small>Career Interest</small>
+      <ul class="check">
+        <li>Digital Payment Systems</li><li>Payment Innovation &amp; Technology</li><li>Digital Transaction Ecosystem</li>
+        <li>Cashless Payment Adoption</li><li>Financial Technology (FinTech)</li><li>Data Analysis &amp; Business Development</li>
+      </ul>
+    </div>
+
+    <div class="b-card b-strength reveal" data-anim="zoom">
+      <small>Core Strengths</small>
+      <div class="tags"><span>Analytical Thinking</span><span>Teamwork</span><span>Problem Solving</span><span>Adaptability</span><span>Communication</span><span>Attention to Detail</span></div>
+    </div>
+
+    <div class="b-card b-tools reveal" data-anim="zoom">
+      <small>Technical Tools</small>
+      <div class="tags tools"><span>Microsoft Excel</span><span>Google Sheets</span><span>PostgreSQL</span><span>Microsoft Word</span><span>Figma</span><span>Canva</span><span>CapCut</span><span>VS Code</span><span>GitHub</span></div>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
-  <p class="eyebrow">Experience</p>
-  <h2>Internship &amp; Organizational</h2>
+  <p class="eyebrow reveal" data-anim="left">Experience</p>
+  <h2 class="reveal title-line" data-anim="left">Internship &amp; Organizational</h2>
   <div class="filter">
     <button class="active" data-f="all">All</button>
     <button data-f="intern">Internship</button>
@@ -97,10 +120,10 @@
   </div>
 
   <div class="timeline">
-    <article class="item reveal" data-type="intern">
+    <article class="item reveal" data-anim="left" data-type="org">
       <div class="item-body">
         <span class="date">Oct 2026 – Present</span>
-        <span class="type">Internship</span>
+        <span class="type org">Organizational</span>
         <h3>StudentsxCEOs East Java</h3>
         <p class="role">Intern of Talent Analytics (Human Resources)</p>
         <ul>
@@ -109,12 +132,12 @@
           <li>Translated findings into actionable recommendations on what to improve, maintain, or develop further.</li>
         </ul>
         <div class="tags"><span>Data Management</span><span>Data Analysis</span><span>Data Visualization</span><span>Strategic Recommendations</span></div>
-        <a class="link" href="https://www.canva.com/design/DAHXJAbahy0/8Jua18T8HqMqAnBnAkrMWg/edit" target="_blank" rel="noopener">Intern Annual Performance Report ↗</a>
+        <a class="link" href="https://canva.link/6p3lg1d2tp6dkb2" target="_blank" rel="noopener">Intern Annual Performance Report ↗</a>
       </div>
       <img class="zoom" src="sxc.jpg" alt="Documentation of StudentsxCEOs East Java internship">
     </article>
 
-    <article class="item reveal" data-type="org">
+    <article class="item reveal" data-anim="right" data-type="org">
       <div class="item-body">
         <span class="date">May 2026 – Present</span>
         <span class="type org">Organizational</span>
@@ -130,7 +153,7 @@
       <img class="zoom" src="ibl-treasurer.jpg" alt="ITS Basketball League treasurer records">
     </article>
 
-    <article class="item reveal" data-type="intern">
+    <article class="item reveal" data-anim="left" data-type="intern">
       <div class="item-body">
         <span class="date">Jan 2026 – Feb 2026</span>
         <span class="type">Internship</span>
@@ -151,7 +174,7 @@
       <img class="zoom" src="indoprima.jpg" alt="Documentation of internship at PT Indoprima Gemilang">
     </article>
 
-    <article class="item reveal" data-type="org">
+    <article class="item reveal" data-anim="right" data-type="org">
       <div class="item-body">
         <span class="date">Aug 2025 – Nov 2025</span>
         <span class="type org">Organizational</span>
@@ -171,16 +194,24 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <p class="eyebrow">Academic Projects</p>
-  <h2>Selected Work</h2>
-  <div class="projects">
-    <article class="pcard reveal">
+  <p class="eyebrow reveal" data-anim="left">Academic Projects</p>
+  <h2 class="reveal title-line" data-anim="left">Selected Work</h2>
+  <div class="projects stagger">
+    <article class="pcard reveal" data-anim="zoom">
       <div class="pimg"><img class="zoom" src="flight.jpg" alt="ERD and SQL query of Flight Management System"></div>
       <div class="pbody">
         <span class="course">Sistem Basis Data</span>
         <h3>Flight Management System</h3>
-        <p>Used PostgreSQL to query a flight database (airlines, aircraft, airports, flights) and turn the results into business insights on operational efficiency and market reach.</p>
-        <div class="tags"><span>PostgreSQL</span><span>JOIN</span><span>GROUP BY</span><span>ERD</span></div>
+        <p>Designed an ERD and wrote 5 PostgreSQL analyses on a flight database (airlines, aircraft, airports, flights) to turn query results into business insights.</p>
+        <div class="findings">
+          <small>Key findings</small>
+          <ul>
+            <li><b>Garuda Indonesia</b> led with the most flights (4) and the widest network (4 destinations), followed by Singapore Airlines.</li>
+            <li><b>0 idle aircraft</b>: every plane was used in operations, showing full fleet utilization.</li>
+            <li>Arrivals were evenly spread across <b>Dubai, Frankfurt, London &amp; Jakarta</b>, a chance to optimize the route network.</li>
+          </ul>
+        </div>
+        <div class="tags"><span>PostgreSQL</span><span>JOIN</span><span>LEFT JOIN</span><span>GROUP BY</span><span>ERD</span></div>
         <details>
           <summary>See details</summary>
           <p><b>Problem:</b> Analyzing interconnected flight data manually for many business cases is slow and inefficient.</p>
@@ -194,10 +225,11 @@
       </div>
     </article>
 
-    <article class="pcard reveal">
+    <article class="pcard reveal" data-anim="zoom">
       <div class="pimg"><img class="zoom" src="fixnow.jpg" alt="FIX NOW app screens"></div>
       <div class="pbody">
         <span class="course">UI/UX Design &amp; Digital Service Innovation</span>
+        <span class="solo">Individual project</span>
         <h3>FIX NOW</h3>
         <p>A digital platform that connects customers with verified local technicians for household repairs, with transparent pricing and service guarantees.</p>
         <div class="tags"><span>Figma</span><span>User Persona</span><span>STP</span><span>TAM · SAM · SOM</span></div>
@@ -214,12 +246,13 @@
       </div>
     </article>
 
-    <article class="pcard reveal">
+    <article class="pcard reveal" data-anim="zoom">
       <div class="pimg"><img class="zoom" src="littlelemon.jpg" alt="Little Lemon source code"></div>
       <div class="pbody">
         <span class="course">Pemrograman Web dan Mobile</span>
+        <span class="solo">Individual project</span>
         <h3>Little Lemon</h3>
-        <p>A responsive restaurant website with menu, location, and table-booking navigation, built from scratch with HTML, CSS, and JavaScript.</p>
+        <p>A restaurant website with menu, location, and table-booking pages that I built on my own with HTML, CSS, and JavaScript, including a live "open now / closed" status based on the visitor's time.</p>
         <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         <details>
           <summary>See details</summary>
@@ -229,7 +262,10 @@
             <li><b>JavaScript</b> for interactive features that respond to user actions.</li>
           </ul>
         </details>
-        <a class="btn small" href="https://shellamutiaraaaa.github.io/" target="_blank" rel="noopener">Visit website ↗</a>
+        <div class="btn-row">
+          <a class="btn small" href="https://shellamutiaraaaa.github.io/" target="_blank" rel="noopener">Visit website ↗</a>
+          <button class="btn small outline" data-code-open>View code &lt;/&gt;</button>
+        </div>
       </div>
     </article>
   </div>
@@ -237,15 +273,15 @@
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="section">
-  <p class="eyebrow">Certifications</p>
-  <h2>Recognition &amp; Participation</h2>
-  <div class="certs">
-    <figure class="reveal"><img class="zoom" src="cert1.jpg" alt="Sertifikat Praktik Kerja PT Indoprima Gemilang"><figcaption>Sertifikat Praktik Kerja — PT Indoprima Gemilang</figcaption></figure>
-    <figure class="reveal"><img class="zoom" src="cert2.jpg" alt="Certificate of Appreciation MANIFEST 2025"><figcaption>Vice Head of Fundraising — MANIFEST 2025</figcaption></figure>
-    <figure class="reveal"><img class="zoom" src="cert5.jpg" alt="Sertifikat NACOPS 7.0"><figcaption>NACOPS 7.0 National Business Plan Competition 2026</figcaption></figure>
-    <figure class="reveal"><img class="zoom" src="cert6.jpg" alt="Sertifikat Panitia CREATION 2025"><figcaption>Staf Kestari — CREATION 2025 FDKBD ITS</figcaption></figure>
-    <figure class="reveal"><img class="zoom" src="cert3.jpg" alt="Sertifikat Staff"><figcaption>Staff Certificate</figcaption></figure>
-    <figure class="reveal"><img class="zoom" src="cert4.jpg" alt="Certificate awarding"><figcaption>Certificate Awarding</figcaption></figure>
+  <p class="eyebrow reveal" data-anim="left">Certifications</p>
+  <h2 class="reveal title-line" data-anim="left">Recognition &amp; Participation</h2>
+  <div class="certs stagger">
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert1.jpg" alt="Sertifikat Praktik Kerja PT Indoprima Gemilang"><figcaption>Sertifikat Praktik Kerja — PT Indoprima Gemilang</figcaption></figure>
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert2.jpg" alt="Certificate of Appreciation MANIFEST 2025"><figcaption>Vice Head of Fundraising — MANIFEST 2025</figcaption></figure>
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert5.jpg" alt="Sertifikat NACOPS 7.0"><figcaption>NACOPS 7.0 National Business Plan Competition 2026</figcaption></figure>
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert6.jpg" alt="Sertifikat Panitia CREATION 2025"><figcaption>Staf Kestari — CREATION 2025 FDKBD ITS</figcaption></figure>
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert3.jpg" alt="Sertifikat Staff"><figcaption>Staff Certificate</figcaption></figure>
+    <figure class="reveal" data-anim="zoom"><img class="zoom" src="cert4.jpg" alt="Certificate awarding"><figcaption>Certificate Awarding</figcaption></figure>
   </div>
 </section>
 
@@ -266,6 +302,25 @@
 </section>
 
 <div class="lightbox" hidden><img alt=""></div>
+<div class="code-modal" hidden role="dialog" aria-modal="true" aria-label="Little Lemon source code">
+  <div class="code-box">
+    <div class="code-head">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <b>Little Lemon · source code</b>
+      <button class="code-close" aria-label="Close">✕</button>
+    </div>
+    <div class="code-tabs">
+      <button class="active" data-file="index.html">index.html</button>
+      <button data-file="style.css">style.css</button>
+      <button data-file="script.js">script.js</button>
+      <button class="copy-btn">Copy</button>
+    </div>
+    <pre class="line-numbers"><code class="language-markup"></code></pre>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="littlelemon-code.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
